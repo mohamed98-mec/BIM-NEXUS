@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BIM NEXUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body {
+      font-family: "Space Grotesk", sans-serif;
+      background-color: #000;
+      color: #fff;
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+    }
+    header .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    header nav a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 6rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    section h1 {
+      font-size: 6vw;
+      font-weight: 700;
+      text-transform: uppercase;
+      z-index: 2;
+      margin-bottom: 1rem;
+    }
+    section p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .service {
+      width: 300px;
+      text-align: center;
+      position: relative;
+    }
+    .service img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      opacity: 0.85;
+    }
+    .service h2 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+    .service p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      background-color: black;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BIM NEXUS</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>About</h1>
+    <p>
+      BIM NEXUS is a multidisciplinary BIM services company that empowers MEP engineers, architects, and contractors with precise and coordinated digital models. We focus on delivering high-quality 3D modeling, clash detection, shop drawings, and full MEP coordination to streamline the construction process and minimize site conflicts.
+    </p>
+  </section>
+
+  <section id="services">
+    <h1>Services</h1>
+    <div class="services-container">
+      <div class="service">
+        <img src="images/3d-modeling.jpg" alt="3D Modeling Mechanical & Electrical" />
+        <h2>3D Modeling</h2>
+        <p>
+          We create precise 3D BIM models for mechanical and electrical systems to ensure accurate design representation and coordination.
+        </p>
+      </div>
+      <div class="service">
+        <img src="images/clash-detection.jpg" alt="Clash Detection Mechanical & Electrical" />
+        <h2>Clash Detection</h2>
+        <p>
+          Identify and resolve conflicts between mechanical and electrical systems early in the design phase to avoid costly site issues.
+        </p>
+      </div>
+      <div class="service">
+        <img src="images/shop-drawings.jpg" alt="Shop Drawings Mechanical & Electrical" />
+        <h2>Shop Drawings</h2>
+        <p>
+          Produce detailed fabrication and installation drawings specific to mechanical and electrical components, compliant with project standards.
+        </p>
+      </div>
+      <div class="service">
+        <img src="images/mep-coordination.jpg" alt="MEP Coordination" />
+        <h2>MEP Coordination</h2>
+        <p>
+          Integrate mechanical, electrical, and plumbing disciplines into a single coordinated BIM model for seamless project delivery.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>
+      For collaboration or inquiries, reach out to us at:<br />
+      📧 <a href="mailto:contact@bimnexus.com" style="color: #aaa; text-decoration: underline;">contact@bimnexus.com</a><br />
+      Or connect on <a href="#" style="color: #aaa; text-decoration: underline;">LinkedIn</a>.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 BIM NEXUS. All rights reserved.
+  </footer>
+</body>
+</html>
